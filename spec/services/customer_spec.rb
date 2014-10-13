@@ -3,11 +3,12 @@ module Services
 
     describe "#get" do
       it "should return array of products" do
-        client = described_class.new(sample_credentials)
+        creds = sample_credentials.merge({ 'modified_since' => '2014-10-1' })
+        client = described_class.new(creds)
+
         customers = client.get
 
-        expect(customers.size).to eq 3
-        expect(customers.first[:id]).to eq 'ACE001'
+        expect(customers.size).to eq 1
       end
     end
   end

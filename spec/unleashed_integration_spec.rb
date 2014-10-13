@@ -2,7 +2,7 @@ describe UnleashedIntegration do
    let(:request) do
     {
       request_id: '1234567',
-      parameters: sample_credentials
+      parameters: sample_credentials.merge!({ "modified_since" => '2014-10-12'})
     }
   end
 
@@ -15,8 +15,8 @@ describe UnleashedIntegration do
     it "returns products" do
       post '/get_products', request.to_json, {}
 
-      expect(json_response['summary']).to eq 'Received 3 Products'
-      expect(json_response['products'].size).to eq 3
+      expect(json_response['summary']).to eq 'Received 1 Products'
+      expect(json_response['products'].size).to eq 1
     end
   end
 
@@ -25,8 +25,8 @@ describe UnleashedIntegration do
     it "returns customers" do
       post '/get_customers', request.to_json, {}
 
-      expect(json_response['summary']).to eq 'Received 3 Customers'
-      expect(json_response['customers'].size).to eq 3
+      expect(json_response['summary']).to eq 'Received 1 Customers'
+      expect(json_response['customers'].size).to eq 1
     end
   end
 
@@ -45,8 +45,8 @@ describe UnleashedIntegration do
     it "returns_inventory" do
       post '/get_inventory', request.to_json, {}
 
-      expect(json_response['summary']).to eq 'Received 3 Inventory'
-      expect(json_response['inventories'].size).to eq 3
+      expect(json_response['summary']).to eq 'Received 2 Inventory'
+      expect(json_response['inventories'].size).to eq 2
     end
   end
 

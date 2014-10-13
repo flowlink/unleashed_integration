@@ -3,7 +3,8 @@ module Services
 
     describe "#get" do
       it "should return array of orders" do
-        client = described_class.new(sample_credentials)
+        creds = sample_credentials.merge({ 'modified_since' => '2014-10-11' })
+        client = described_class.new(creds)
         shipments = client.get
 
         expect(shipments.size).to eq 1
