@@ -1,5 +1,5 @@
 require 'openssl'
-require 'Base64'
+require 'base64'
 
 require_relative 'services/base'
 require_relative 'services/product'
