@@ -2,7 +2,10 @@ module Services
   class Product < Base
     def get
       create_query_string
+
       response = request('products')
+      get_last_update(response)
+
       response["Items"].map { |item| serialize_product(item) }
     end
 
@@ -10,9 +13,9 @@ module Services
 
     def serialize_product(item)
       {
-        id: item["ProductCode"],
-        description: item['ProductDescription'],
-        bigcommerce_id: item['Guid']
+        id:             item["ProductCode"],
+        description:    item['ProductDescription'],
+        unleashed_id:   item['Guid']
       }
     end
 

@@ -5,6 +5,8 @@ module Services
       create_query_string
 
       response = request('StockOnHand')
+      get_last_update(response)
+
       response["Items"].map { |order| serialize_inventory(order) }
     end
 
@@ -12,7 +14,7 @@ module Services
 
     def serialize_inventory(inventory)
       {
-        id: inventory['ProductCode']
+        id:         inventory['ProductCode']
       }
     end
 

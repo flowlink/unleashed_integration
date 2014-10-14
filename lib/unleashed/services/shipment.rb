@@ -5,6 +5,8 @@ module Services
       create_query_string
 
       response = request('SalesShipments')
+      get_last_update(response)
+
       response["Items"].map { |order| serialize_shipment(order) }
     end
 
@@ -15,7 +17,7 @@ module Services
         id: shipment['ShipmentNumber'],
         status: 'shipped',
         order_number: shipment['OrderNumber'],
-        bigcommerce_id: shipment['Guid']
+        unleashed_id: shipment['Guid']
       }
     end
 

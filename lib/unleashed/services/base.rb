@@ -1,5 +1,7 @@
 module Services
   class Base
+    attr_reader :last_update
+
     def initialize(config)
       @api_url  = config['api_url']
       @api_key  = config['api_key']
@@ -33,6 +35,18 @@ module Services
       if res.has_key?("Description")
         raise ApiError, res['Description']
       end
+    end
+
+    def get_last_update(response)
+      @last_update = nil
+      return if response['Items'].empty?
+      date = response['Items'].first['LastModifiedOn']
+
+      @last_update = parse_date(date)
+    end
+
+    def parse_date(date)
+      Time.at(date.scan(/\d/).join.to_i / 1000).to_datetime.utc.to_s
     end
   end
 end

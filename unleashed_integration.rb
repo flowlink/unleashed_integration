@@ -5,11 +5,14 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
   post '/get_products' do
     begin
-      products = Services::Product.new(@config).get
+      client = Services::Product.new(@config)
+      products = client.get
+
       products.each { |product| add_object :product, product }
 
       code    = 200
       message = products.size > 0 ? "Received #{products.size} Products" : ""
+      add_param client
     rescue => e
       binding.pry
       code    = 500
@@ -21,11 +24,14 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
   post '/get_customers' do
     begin
-      customers = Services::Customer.new(@config).get
+      client = Services::Customer.new(@config)
+      customers = client.get
+
       customers.each { |customer| add_object :customer, customer }
 
       code = 200
       message = customers.size > 0 ? "Received #{customers.size} Customers" : ""
+      add_param client
     rescue => e
       code    = 500
       message = 'error!'
@@ -36,11 +42,14 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
   post '/get_orders' do
     begin
-      orders = Services::Order.new(@config).get
+      client = Services::Order.new(@config)
+      orders = client.get
+
       orders.each { |order| add_object :order, order }
 
       code = 200
       message = orders.size > 0 ? "Received #{orders.size} Orders" : ""
+      add_param client
     rescue => e
       code    = 500
       message = 'error!'
@@ -51,12 +60,15 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
   post '/get_inventory' do
     begin
-      inventory = Services::Inventory.new(@config).get
+      client = Services::Inventory.new(@config)
+      inventory = client.get
       inventory.each { |inventory| add_object :inventory, inventory }
 
       code = 200
       message = inventory.size > 0 ? "Received #{inventory.size} Inventory" : ""
+      add_param client
     rescue => e
+      binding.pry
       code    = 500
       message = 'error!'
     end
@@ -66,16 +78,26 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
   post '/get_shipments' do
     begin
-      shipments = Services::Shipment.new(@config).get
+      client = Services::Shipment.new(@config)
+      shipments = client.get
       shipments.each { |shipment| add_object :shipment, shipment }
 
       code = 200
       message = shipments.size > 0 ? "Received #{shipments.size} Shipments" : ""
+      add_param client
     rescue => e
       code    = 500
       message = 'error!'
     end
 
     result code, message
+  end
+
+  post '/create_order' do
+    Services::Order.create(@config)
+  end
+
+  def add_param(client)
+    add_parameter(:modified_since, client.last_update) if client.last_update
   end
 end

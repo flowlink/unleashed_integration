@@ -5,6 +5,8 @@ module Services
       create_query_string
 
       response = request('customers')
+      get_last_update(response)
+
       response["Items"].map { |item| serialize_customer(item) }
     end
 

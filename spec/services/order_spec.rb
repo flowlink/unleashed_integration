@@ -7,7 +7,7 @@ module Services
         client = described_class.new(creds)
         orders = client.get
 
-        expect(orders.size).to eq 1
+        expect(orders.size).to eq 2
       end
     end
   end
