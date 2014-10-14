@@ -14,7 +14,11 @@ module Services
 
     def serialize_inventory(inventory)
       {
-        id:         inventory['ProductCode']
+        id:           inventory['ProductCode'],
+        product_id:   inventory['ProductCode'],
+        unleashed_id: inventory['Guid'],
+        location:     inventory['Warehouse'],
+        quantity:     inventory['AvailableQty']
       }
     end
 

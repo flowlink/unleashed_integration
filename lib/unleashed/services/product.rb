@@ -14,8 +14,10 @@ module Services
     def serialize_product(item)
       {
         id:             item["ProductCode"],
+        channel:        'unleashed',
         description:    item['ProductDescription'],
-        unleashed_id:   item['Guid']
+        unleashed_id:   item['Guid'],
+        price:          item['DefaultSellPrice']
       }
     end
 
