@@ -19,3 +19,8 @@ group :test do
   gem 'rspec'
   gem 'rack-test'
 end
+
+group :production do
+  gem 'foreman'
+  gem 'unicorn'
+end
