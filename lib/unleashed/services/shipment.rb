@@ -22,7 +22,7 @@ module Services
     end
 
     def create_query_string
-      @query_string = "?modifiedSince=#{modified_since}"
+      @query_string = "?modifiedSince=#{modified_since}&shipmentStatus=dispatched"
     end
   end
 end

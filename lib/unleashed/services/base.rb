@@ -15,7 +15,7 @@ module Services
     end
 
     def query_to_sign
-      @query_string.gsub(/[?&]/, '')
+      @query_string.gsub('?', '')
     end
 
     def modified_since
