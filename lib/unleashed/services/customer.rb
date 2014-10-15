@@ -1,5 +1,6 @@
 module Services
   class Customer < Base
+    include CustomerSerializer
 
     def get
       create_query_string
@@ -10,31 +11,31 @@ module Services
       response["Items"].map { |item| serialize_customer(item) }
     end
 
-    private
+    def create(customer)
+      get_guid(customer)
 
-    def serialize_customer(item)
-      {
-        id:           item['CustomerCode'],
-        unleashed_id: item['Guid'],
-        firstname:    item['CustomerName'].split(" ").first,
-        lastname:     item['CustomerName'].split(" ").last,
-        email:        item['Email'],
-        shipping_address: get_address(item)
-      }
+      post_request("Customers/#{@guid}", serialize_for_post(customer))
+
+      { id: customer["id"], unleashed_id: @guid }
     end
 
-    def get_address(item)
-      address = item['Addresses'].select { |addr| addr['AddressType'] == 'Postal' }.first
-      return {} unless address.present?
+    private
 
-      {
-        address1: address['StreetAddress'],
-        zipcode:  address['PostalCode'],
-        city:     address['City'],
-        state:    address['Region'],
-        country:  address['Country'],
-        phone:    item['PhoneNumber']
-      }
+    def get_guid(customer)
+      @guid ||=
+      if customer["unleashed_id"].present?
+        customer["unleashed_id"]
+      elsif guid = find_customer(customer['id'])
+        guid
+      else
+        SecureRandom.uuid
+      end
+    end
+
+    def find_customer(id)
+      @query_string = "?customerCode=#{id}"
+      request('Customers')["Items"].first["Guid"]
+    rescue => e
     end
 
     def create_query_string

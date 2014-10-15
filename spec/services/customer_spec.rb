@@ -11,5 +11,14 @@ module Services
         expect(customers.size).to eq 1
       end
     end
+
+    describe "#create" do
+      it "should create product" do
+        client = described_class.new(sample_credentials)
+        customer = client.create({ "id" => '999', "firstname" => "test" })
+
+        expect(customer[:id]).to eq "999"
+      end
+    end
   end
 end

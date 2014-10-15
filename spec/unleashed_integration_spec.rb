@@ -64,4 +64,27 @@ describe UnleashedIntegration do
       expect(json_response['shipments'].size).to eq 1
     end
   end
+
+  describe "/add_product" do
+
+    it "creates a product" do
+      product = { product: { id: '1111', description: 'something' }}
+      post '/add_product', request.merge(product).to_json, {}
+
+      expect(json_response['products'].size).to eq 1
+      expect(json_response['products'].first.has_key?('unleashed_id')).to eq true
+    end
+  end
+
+  describe "/customer" do
+
+    it "creates a customer" do
+      customer = { customer: { id: '789', firstname: 'John' }}
+      post '/add_customer', request.merge(customer).to_json, {}
+
+      expect(json_response['customers'].size).to eq 1
+      expect(json_response['customers'].first.has_key?('unleashed_id')).to eq true
+    end
+  end
+
 end

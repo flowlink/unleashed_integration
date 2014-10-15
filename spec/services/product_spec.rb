@@ -12,5 +12,14 @@ module Services
         expect(products.first[:id]).to eq '123'
       end
     end
+
+    describe "#create" do
+      it "should create product" do
+        client = described_class.new(sample_credentials)
+        product = client.create({ "id" => '9160', "description" => "something" })
+
+        expect(product[:id]).to eq "9160"
+      end
+    end
   end
 end

@@ -93,8 +93,42 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
     result code, message
   end
 
-  post '/create_order' do
-    Services::Order.create(@config)
+  ["/add_product", "/update_product"].each do |path|
+    post path do
+      begin
+        client  = Services::Product.new(@config)
+        product = client.create(@payload['product'])
+
+        add_object :product, product
+
+        code    = 200
+        message = "Created Product in Unleashed"
+      rescue ApiError => e
+        code = 500
+        message = e.message
+      end
+
+      result code, message
+    end
+  end
+
+  ["/add_customer", "/update_customer"].each do |path|
+    post path do
+      begin
+        client  = Services::Customer.new(@config)
+        customer = client.create(@payload['customer'])
+
+        add_object :customer, customer
+
+        code    = 200
+        message = "Created Customer in Unleashed"
+      rescue ApiError => e
+        code = 500
+        message = e.message
+      end
+
+      result code, message
+    end
   end
 
   def add_param(client)
