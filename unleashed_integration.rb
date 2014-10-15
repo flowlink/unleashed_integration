@@ -131,6 +131,23 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
     end
   end
 
+  post "/set_inventory" do
+    begin
+      client  = Services::Inventory.new(@config)
+      inventory = client.create(@payload['inventory'])
+
+      add_object :inventory, inventory
+
+      code    = 200
+      message = "Set Inventory in Unleashed"
+    rescue ApiError, RecordNotFound => e
+      code = 500
+      message = e.message
+    end
+
+    result code, message
+  end
+
   def add_param(client)
     add_parameter(:modified_since, client.last_update) if client.last_update
   end

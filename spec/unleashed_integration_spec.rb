@@ -87,4 +87,13 @@ describe UnleashedIntegration do
     end
   end
 
+  describe "/set_inventory" do
+    it "creates a customer" do
+      inventory = { inventory: { "id" => '9160', "location" => "Warehouse", "reason" => "Adjustment", "quantity" => 1 }}
+      post '/set_inventory', request.merge(inventory).to_json, {}
+
+      expect(json_response['inventories'].size).to eq 1
+      expect(json_response['inventories'].first.has_key?('unleashed_id')).to eq true
+    end
+  end
 end

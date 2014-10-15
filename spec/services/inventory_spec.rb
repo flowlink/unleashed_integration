@@ -10,5 +10,14 @@ module Services
         expect(inventory.size).to eq 2
       end
     end
+
+    describe "#create" do
+      it "should create product" do
+        client = described_class.new(sample_credentials)
+        inventory = client.create({ "id" => '9160', "location" => "Warehouse", "reason" => "Adjustment", "quantity" => 1 })
+
+        expect(inventory[:id]).to eq "9160"
+      end
+    end
   end
 end
