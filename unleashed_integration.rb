@@ -148,6 +148,23 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
     result code, message
   end
 
+  post "/add_order" do
+    begin
+      client  = Services::Order.new(@config)
+      order = client.create(@payload['order'])
+
+      add_object :order, order
+
+      code    = 200
+      message = "Added Order in Unleashed"
+    rescue ApiError, RecordNotFound => e
+      code = 500
+      message = e.message
+    end
+
+    result code, message
+  end
+
   def add_param(client)
     add_parameter(:modified_since, client.last_update) if client.last_update
   end

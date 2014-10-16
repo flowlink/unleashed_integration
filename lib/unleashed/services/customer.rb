@@ -25,7 +25,7 @@ module Services
       @guid ||=
       if customer["unleashed_id"].present?
         customer["unleashed_id"]
-      elsif guid = find_customer(customer['id'])
+      elsif guid = find_customer(customer['email'])
         guid
       else
         SecureRandom.uuid

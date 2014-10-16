@@ -1,5 +1,6 @@
 module Services
   class Order < Base
+    include OrderSerializer
 
     def get
       create_query_string
@@ -10,39 +11,32 @@ module Services
       response["Items"].map { |order| serialize_order(order) }
     end
 
+    def create(order)
+      get_guid(order)
+
+      @query_string = ''
+      post_request("SalesOrders/#{@guid}", serialize_for_post(order), "xml")
+
+      { id: order["id"], unleashed_id: @guid }
+    end
+
     private
 
-    def serialize_order(order)
-      {
-        id:           order["OrderNumber"],
-        unleashed_id: order["Guid"],
-        channel:      'unleashed',
-        status:       order['OrderStatus'],
-        email:        customer_email(order['Customer']['Guid']),
-        placed_on:    parse_date(order['OrderDate']),
-        shipping_address: {
-          firstname: order["Customer"]["CustomerName"].split(" ").first,
-          lastname:  order["Customer"]["CustomerName"].split(" ").last,
-          address1:  order["DeliveryStreetAddress"],
-          zipcode:   order["DeliveryPostCode"],
-          city:      order["DeliveryCity"],
-          state:     order["DeliveryRegion"],
-          country:   order["DeliveryCountry"]
-        },
-        totals: {
-          order: order['Total'],
-          tax:   order['TaxTotal']
-        },
-        line_items:   order['SalesOrderLines'].map do |item|
-          {
-            product_id:   item['Product']['ProductCode'],
-            unleashed_id: item['Product']['Guid'],
-            description:  item['Product']['ProductDescription'],
-            quantity:     item['OrderQuantity'],
-            price:        item['UnitPrice']
-          }
-        end
-      }
+    def get_guid(order)
+      @guid ||=
+      if order["unleashed_id"].present?
+        order["unleashed_id"]
+      elsif guid = find_order(order['id'])
+        guid
+      else
+        SecureRandom.uuid
+      end
+    end
+
+    def find_order(id)
+      @query_string = "?orderNumber=#{id}"
+      request('SalesOrders')["Items"].first["Guid"]
+    rescue => e
     end
 
     def create_query_string

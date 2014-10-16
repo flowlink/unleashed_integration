@@ -1,4 +1,4 @@
-module Services
+ module Services
   describe Order do
 
     describe "#get" do
@@ -8,6 +8,16 @@ module Services
         orders = client.get
 
         expect(orders.size).to eq 2
+      end
+    end
+
+    describe "#create" do
+      it "should create product" do
+        client = described_class.new(sample_credentials)
+        order = client.create({ "id" => rand(1000), "email" => "test@test.com", "billing_address" => { "firstname" => "test" } })
+        binding.pry
+
+        expect(order[:id]).to eq "9160"
       end
     end
   end

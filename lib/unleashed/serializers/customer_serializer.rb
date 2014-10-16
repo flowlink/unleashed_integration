@@ -26,7 +26,7 @@ module CustomerSerializer
 
   def serialize_for_post(customer)
     {
-      "CustomerCode" => customer['id'],
+      "CustomerCode" => customer['email'],
       "CustomerName" => "#{customer['firstname']} #{customer['lastname']}",
       "Guid"         => @guid
     }

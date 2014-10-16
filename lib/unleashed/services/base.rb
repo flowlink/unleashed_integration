@@ -31,9 +31,11 @@ module Services
       res
     end
 
-    def post_request(endpoint, body)
-      res = HTTParty.post("#{@api_url}/#{endpoint}#{@query_string}", body: body.to_json,
-                         headers: { "Accept" => 'application/json', 'Content-Type' => 'application/json',
+    def post_request(endpoint, body, type="json")
+      body = type == "json" ? body.to_json : body
+
+      res = HTTParty.post("#{@api_url}/#{endpoint}#{@query_string}", body: body,
+                         headers: { "Accept" => "application/#{type}", 'Content-Type' => "application/#{type}",
                          'api-auth-id' => @api_id, 'api-auth-signature' => signature })
 
       validate(res)
@@ -59,5 +61,3 @@ module Services
     end
   end
 end
-
-class ApiError < StandardError; end
