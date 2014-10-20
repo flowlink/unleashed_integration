@@ -14,7 +14,6 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       message = products.size > 0 ? "Received #{products.size} Products" : ""
       add_param client
     rescue => e
-      binding.pry
       code    = 500
       message = 'error!'
     end
@@ -68,7 +67,6 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       message = inventory.size > 0 ? "Received #{inventory.size} Inventory" : ""
       add_param client
     rescue => e
-      binding.pry
       code    = 500
       message = 'error!'
     end

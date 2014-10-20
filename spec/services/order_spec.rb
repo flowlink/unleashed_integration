@@ -15,7 +15,6 @@
       it "should create product" do
         client = described_class.new(sample_credentials)
         order = client.create({ "id" => rand(1000), "email" => "test@test.com", "billing_address" => { "firstname" => "test" } })
-        binding.pry
 
         expect(order[:id]).to eq "9160"
       end

@@ -3,7 +3,7 @@ module Services
     attr_reader :last_update
 
     def initialize(config)
-      @api_url  = config['api_url']
+      @api_url  = 'https://api.unleashedsoftware.com'
       @api_key  = config['api_key']
       @api_id   = config['api_id']
       @config   = config
