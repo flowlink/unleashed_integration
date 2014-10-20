@@ -18,6 +18,18 @@ RSpec.configure do |config|
   config.include Rack::Test::Methods
 end
 
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.filter_sensitive_data("API_ID") do |interaction|
+    sample_credentials["api_id"]
+  end
+
+  c.filter_sensitive_data("API_KEY") do |interaction|
+    sample_credentials["api_key"]
+  end
+end
+
 def app
   UnleashedIntegration
 end

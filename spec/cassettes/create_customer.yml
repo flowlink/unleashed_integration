@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers?customerCode=test@t.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - 1gE42RSG4RBIibQg5qKq3khqCL7B3sPSNB2B8NRjgf8=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:19:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1035'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"Addresses":[],"CustomerCode":"test@t.com","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c7b96023-f6ae-41d2-8398-b05707326e0d","LastModifiedOn":"\/Date(1413763969623)\/"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:13:52 GMT
+- request:
+    method: post
+    uri: https://api.unleashedsoftware.com/Customers/c7b96023-f6ae-41d2-8398-b05707326e0d?customerCode=test@t.com
+    body:
+      encoding: UTF-8
+      string: '{"CustomerCode":"test@t.com","CustomerName":"test ","Guid":"c7b96023-f6ae-41d2-8398-b05707326e0d"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - 1gE42RSG4RBIibQg5qKq3khqCL7B3sPSNB2B8NRjgf8=
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:19:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '942'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@t.com","CustomerName":"test ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c7b96023-f6ae-41d2-8398-b05707326e0d","LastModifiedOn":"\/Date(1413764028840)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:13:53 GMT
+recorded_with: VCR 2.9.3

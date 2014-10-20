@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/SalesShipments?modifiedSince=2014-09-11T00:00:00&shipmentStatus=dispatched
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - lbrl3Oed+Np6lll0LLmiFosBI58pk/v+v/AdagIHeh0=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 15:49:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '821'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"OrderNumber":"SO-00000001","ShipmentNumber":"SS-00000001","ShipmentStatus":"Dispatched","DispatchDate":"\/Date(1413025200000)\/","TrackingNumber":null,"ShippingCompany":null,"Comments":null,"CreatedOn":"12/10/2014
+        8:08:10 p.m.","CreatedBy":"wesleyketchum@gmail.com","LastModifiedBy":"wesleyketchum@gmail.com","SalesShipmentLines":[{"LineNumber":1,"Product":{"Guid":"a8d03f0f-73fa-401a-99eb-0bd31fdca286","ProductCode":"ANIMAL","ProductDescription":"Animal
+        Shapes Box Set"},"ShipmentQty":1.0000,"UnitCost":1.000,"CreatedOn":null,"CreatedBy":null,"LastModifiedBy":null,"Guid":"3895ab3a-98c4-4b8b-8d67-20b8dfc9cc2a","LastModifiedOn":null}],"Guid":"c6f45c67-af98-4639-ae18-679aeb4c3021","LastModifiedOn":"\/Date(1413097692483)\/"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 15:44:06 GMT
+recorded_with: VCR 2.9.3

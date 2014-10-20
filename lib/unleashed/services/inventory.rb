@@ -84,5 +84,3 @@ module Services
     end
   end
 end
-
-class RecordNotFound < StandardError; end

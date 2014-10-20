@@ -1,0 +1,1161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/SalesOrders?modifiedSince=2014-10-01T00:00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - zj9TcR81a32OoeqZUdoUJURz4kMuvYQ6jK3gfTyhkA8=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '41089'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Pagination":{"NumberOfItems":22,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"SalesOrderLines":[],"OrderNumber":"287","OrderDate":"\/Date(1413762774683)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413762774747)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"f39dca38-d224-4253-ad1e-59ac07cfc0dc","LastModifiedOn":"\/Date(1413762774793)\/"},{"SalesOrderLines":[],"OrderNumber":"169","OrderDate":"\/Date(1413760045883)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413760045900)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"249cf9a9-10ee-46dc-bcd8-58cf43f879b7","LastModifiedOn":"\/Date(1413760045917)\/"},{"SalesOrderLines":[],"OrderNumber":"90","OrderDate":"\/Date(1413759340227)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413759340273)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"00fc6b3b-b81f-4470-ba39-45eed421222c","LastModifiedOn":"\/Date(1413759340273)\/"},{"SalesOrderLines":[],"OrderNumber":"R1540853463212","OrderDate":"\/Date(1413433899283)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413444857933)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"16efc7ab-221e-440a-9a9f-919c0b454333","LastModifiedOn":"\/Date(1413444857950)\/"},{"SalesOrderLines":[],"OrderNumber":"R1540853463291","OrderDate":"\/Date(1413433899283)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413433899300)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"16efc7ab-221e-440a-9a9f-919c0b454cfd","LastModifiedOn":"\/Date(1413433899300)\/"},{"SalesOrderLines":[],"OrderNumber":"R154085346189","OrderDate":"\/Date(1413433378487)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413433378533)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"242a952b-e6df-484e-af19-5899dec7cb24","LastModifiedOn":"\/Date(1413433378533)\/"},{"SalesOrderLines":[],"OrderNumber":"692","OrderDate":"\/Date(1413431315453)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413431315470)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"d574abe1-7840-47b5-b303-98a6eb80fdf7","LastModifiedOn":"\/Date(1413431315483)\/"},{"SalesOrderLines":[],"OrderNumber":"727","OrderDate":"\/Date(1413431112250)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413431112283)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"d3886226-d3c0-4c18-8939-308932969cb7","LastModifiedOn":"\/Date(1413431112297)\/"},{"SalesOrderLines":[],"OrderNumber":"281","OrderDate":"\/Date(1413431100187)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413431100250)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"1b8f9ead-5152-4989-b215-7f725b97e2de","LastModifiedOn":"\/Date(1413431100267)\/"},{"SalesOrderLines":[],"OrderNumber":"123333335","OrderDate":"\/Date(1413430460017)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413430945783)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"e95e9015-425f-4333-832d-7ba8030a0909","LastModifiedOn":"\/Date(1413430945783)\/"},{"SalesOrderLines":[],"OrderNumber":"12333333","OrderDate":"\/Date(1413430460017)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413430649483)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"e95e9015-425f-4333-812d-7ba8030a0909","LastModifiedOn":"\/Date(1413430649500)\/"},{"SalesOrderLines":[],"OrderNumber":"9160","OrderDate":"\/Date(1413430460017)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"test@test.com","CustomerName":"test","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413430460047)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"e95e9015-425f-4932-812d-7ba8030a0909","LastModifiedOn":"\/Date(1413430460047)\/"},{"SalesOrderLines":[],"OrderNumber":"666-2","OrderDate":"\/Date(1413370800000)\/","RequiredDate":null,"OrderStatus":"Placed","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413426648407)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"0f7c49c9-468f-43c0-6666-dbc167ebae62","LastModifiedOn":"\/Date(1413426648420)\/"},{"SalesOrderLines":[],"OrderNumber":"666-1","OrderDate":"\/Date(1413426495107)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413426495120)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"api@unleashedsoftware.com","Guid":"0f7c49c9-468f-43c0-8776-dbc167ebae62","LastModifiedOn":"\/Date(1413426495137)\/"},{"SalesOrderLines":[],"OrderNumber":"666","OrderDate":"\/Date(1413426395950)\/","RequiredDate":null,"OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":null,"TotalWeight":null,"BCSubTotal":null,"BCTaxTotal":null,"BCTotal":null,"PaymentDueDate":"\/Date(1413426395967)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b7-468f-43c0-8776-dbc167ebae62","LastModifiedOn":"\/Date(1413426395967)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"8cd7e7d4-663e-4f08-aaaf-42b030293876","ProductCode":"123","ProductDescription":"cool
+        product"},"DueDate":"\/Date(1413198000000)\/","OrderQuantity":1.0000,"UnitPrice":0.0000,"DiscountRate":0.0000,"LineTotal":0.00000000,"Volume":null,"Weight":null,"Comments":"","AverageLandedPriceAtTimeOfSale":0.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":0.0000,"BCLineTotal":0.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"bf762b01-e0fb-4614-80f6-335cb9b912d5","LastModifiedOn":"\/Date(1413425694107)\/"}],"OrderNumber":"1234567879","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413425694027)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-9999-dbc167ebae62","LastModifiedOn":"\/Date(1413425694027)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"8cd7e7d4-663e-4f08-aaaf-42b030293876","ProductCode":"123","ProductDescription":"cool
+        product"},"DueDate":"\/Date(1413198000000)\/","OrderQuantity":1.0000,"UnitPrice":0.0000,"DiscountRate":0.0000,"LineTotal":0.00000000,"Volume":null,"Weight":null,"Comments":"","AverageLandedPriceAtTimeOfSale":0.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":0.0000,"BCLineTotal":0.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"bf762b01-e0fb-4614-80f5-335cb9b912d5","LastModifiedOn":"\/Date(1413425547340)\/"}],"OrderNumber":"123456787","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413425547323)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-9889-dbc167ebae62","LastModifiedOn":"\/Date(1413425547340)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"8cd7e7d4-663e-4f08-aaaf-42b030293876","ProductCode":"123","ProductDescription":"cool
+        product"},"DueDate":"\/Date(1413198000000)\/","OrderQuantity":1.0000,"UnitPrice":0.0000,"DiscountRate":0.0000,"LineTotal":0.00000000,"Volume":null,"Weight":null,"Comments":"","AverageLandedPriceAtTimeOfSale":0.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":0.0000,"BCLineTotal":0.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"bf762b01-e0fb-4613-80f5-335cb9b912d5","LastModifiedOn":"\/Date(1413425380323)\/"}],"OrderNumber":"123456789","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413425380293)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-8889-dbc167ebae62","LastModifiedOn":"\/Date(1413425380293)\/"},{"SalesOrderLines":[],"OrderNumber":"12345678","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413424824387)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-8779-dbc167ebae62","LastModifiedOn":"\/Date(1413424824387)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"8cd7e7d4-663e-4f08-aaaf-42b030293876","ProductCode":"123","ProductDescription":"cool
+        product"},"DueDate":"\/Date(1413198000000)\/","OrderQuantity":1.0000,"UnitPrice":0.0000,"DiscountRate":0.0000,"LineTotal":0.00000000,"Volume":null,"Weight":null,"Comments":"","AverageLandedPriceAtTimeOfSale":0.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":0.0000,"BCLineTotal":0.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"bf762b01-e0fb-4612-80f5-335cb9b912d5","LastModifiedOn":"\/Date(1413424792747)\/"}],"OrderNumber":"1234567","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Parked","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413424792697)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-8778-dbc167ebae62","LastModifiedOn":"\/Date(1413424792697)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"8cd7e7d4-663e-4f08-aaaf-42b030293876","ProductCode":"123","ProductDescription":"cool
+        product"},"DueDate":"\/Date(1413243369303)\/","OrderQuantity":1.0000,"UnitPrice":0.0000,"DiscountRate":0.0000,"LineTotal":0.00000000,"Volume":null,"Weight":null,"Comments":"","AverageLandedPriceAtTimeOfSale":0.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":0.0000,"BCLineTotal":0.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"bf762b01-e0fb-4611-80f5-335cb9b912d5","LastModifiedOn":"\/Date(1413245207453)\/"}],"OrderNumber":"SO-00000002","OrderDate":"\/Date(1413198000000)\/","RequiredDate":"\/Date(1413198000000)\/","OrderStatus":"Placed","Customer":{"CustomerCode":"001","CustomerName":"wes
+        ketchum","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":0.000,"TaxTotal":0.000,"Total":0.000,"TotalVolume":0.000,"TotalWeight":0.000,"BCSubTotal":0.000,"BCTaxTotal":0.000,"BCTotal":0.000,"PaymentDueDate":"\/Date(1413245207410)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"0f7c49b4-468f-43c0-8776-dbc167ebae62","LastModifiedOn":"\/Date(1413245249030)\/"},{"SalesOrderLines":[{"LineNumber":1,"Product":{"Guid":"a8d03f0f-73fa-401a-99eb-0bd31fdca286","ProductCode":"ANIMAL","ProductDescription":"Animal
+        Shapes Box Set"},"DueDate":"\/Date(1413097632293)\/","OrderQuantity":1.0000,"UnitPrice":5.0000,"DiscountRate":0.0000,"LineTotal":5.00000000,"Volume":1.000,"Weight":1.000,"Comments":"","AverageLandedPriceAtTimeOfSale":1.00000000000000,"TaxRate":0.000000,"LineTax":0.000,"XeroTaxCode":"None","BCUnitPrice":5.0000,"BCLineTotal":5.000,"BCLineTax":0.000,"LineTaxCode":null,"XeroSalesAccount":null,"Guid":"19ea0c76-34b7-4e2b-8ad2-494fbda46179","LastModifiedOn":"\/Date(1413097692637)\/"}],"OrderNumber":"SO-00000001","OrderDate":"\/Date(1413025200000)\/","RequiredDate":"\/Date(1413025200000)\/","OrderStatus":"Completed","Customer":{"CustomerCode":"ACE001","CustomerName":"Ace
+        Outlets","Guid":"4d2dbc7b-e2d7-4034-b94d-2554988ea388","LastModifiedOn":null},"CustomerRef":null,"Comments":null,"Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"ReceivedDate":null,"DeliveryName":null,"DeliveryStreetAddress":null,"DeliverySuburb":null,"DeliveryCity":null,"DeliveryRegion":null,"DeliveryCountry":null,"DeliveryPostCode":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"ExchangeRate":1.000000,"DiscountRate":0.0000,"Tax":{"TaxCode":"None","Description":null,"TaxRate":0.000000,"CanApplyToExpenses":false,"CanApplyToRevenue":false,"Guid":"00000000-0000-0000-0000-000000000000","LastModifiedOn":null},"TaxRate":0.000000,"XeroTaxCode":"None","SubTotal":5.000,"TaxTotal":0.000,"Total":5.000,"TotalVolume":1.000,"TotalWeight":1.000,"BCSubTotal":5.000,"BCTaxTotal":0.000,"BCTotal":5.000,"PaymentDueDate":"\/Date(1416394800000)\/","SalesOrderGroup":null,"DeliveryMethod":null,"SalesPerson":null,"SendAccountingJournalOnly":false,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"1c447d32-dfc2-4d08-85e7-67beaa65399a","LastModifiedOn":"\/Date(1413097692637)\/"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:19 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:19 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:20 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:21 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/0640463b-862f-41bc-a625-263938cc9b4a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '934'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:22 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/0640463b-862f-41bc-a625-263938cc9b4a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '934'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:23 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/0640463b-862f-41bc-a625-263938cc9b4a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '934'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:24 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:25 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:26 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:27 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:28 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:29 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/c3d22457-b74a-4677-b719-d26988d1d3e5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:29 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:30 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:31 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:32 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:33 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:34 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:35 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:36 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:37 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/6739a193-a113-4128-897f-001ad1a7982a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[{"AddressType":"Postal","AddressName":"1234 fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:38 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Customers/4d2dbc7b-e2d7-4034-b94d-2554988ea388
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:37:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '954'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Addresses":[],"CustomerCode":"ACE001","CustomerName":"Ace Outlets","GSTVATNumber":"","BankName":"","BankBranch":"","BankAccount":"","Website":"","PhoneNumber":"","FaxNumber":"","MobileNumber":"","DDINumber":"","TollFreeNumber":"","Email":"","EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":"","Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":true,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"Sell
+        Price Tier 1","SellPriceTierReference":{"Reference":"SellPriceTier1"},"CustomerType":"General","PaymentTerm":"20th
+        Month following","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"admin","Guid":"4d2dbc7b-e2d7-4034-b94d-2554988ea388","LastModifiedOn":null}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:32:39 GMT
+recorded_with: VCR 2.9.3

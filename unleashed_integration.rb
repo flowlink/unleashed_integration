@@ -13,9 +13,9 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       code    = 200
       message = products.size > 0 ? "Received #{products.size} Products" : ""
       add_param client
-    rescue => e
+    rescue ApiError, RecordNotFound => e
       code    = 500
-      message = 'error!'
+      message = e.message
     end
 
     result code, message
@@ -31,9 +31,9 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       code = 200
       message = customers.size > 0 ? "Received #{customers.size} Customers" : ""
       add_param client
-    rescue => e
+    rescue ApiError, RecordNotFound => e
       code    = 500
-      message = 'error!'
+      message = e.message
     end
 
     result code, message
@@ -49,9 +49,9 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       code = 200
       message = orders.size > 0 ? "Received #{orders.size} Orders" : ""
       add_param client
-    rescue => e
+    rescue ApiError, RecordNotFound => e
       code    = 500
-      message = 'error!'
+      message = e.message
     end
 
     result code, message
@@ -66,9 +66,9 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       code = 200
       message = inventory.size > 0 ? "Received #{inventory.size} Inventory" : ""
       add_param client
-    rescue => e
+    rescue ApiError, RecordNotFound => e
       code    = 500
-      message = 'error!'
+      message = e.message
     end
 
     result code, message
@@ -83,9 +83,9 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       code = 200
       message = shipments.size > 0 ? "Received #{shipments.size} Shipments" : ""
       add_param client
-    rescue => e
+    rescue ApiError, RecordNotFound => e
       code    = 500
-      message = 'error!'
+      message = e.message
     end
 
     result code, message
@@ -101,8 +101,8 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
         code    = 200
         message = "Created Product in Unleashed"
-      rescue ApiError => e
-        code = 500
+      rescue ApiError, RecordNotFound => e
+        code    = 500
         message = e.message
       end
 
@@ -120,8 +120,8 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
         code    = 200
         message = "Created Customer in Unleashed"
-      rescue ApiError => e
-        code = 500
+      rescue ApiError, RecordNotFound => e
+        code    = 500
         message = e.message
       end
 

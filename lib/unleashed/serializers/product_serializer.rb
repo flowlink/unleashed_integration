@@ -1,11 +1,9 @@
 module ProductSerializer
   def serialize_for_post(product)
-    guid = product['unleashed_id'] || SecureRandom.uuid
-
     {
       "ProductCode"        => product["id"].to_s,
       "ProductDescription" => product["description"],
-      "Guid"               => guid
+      "Guid"               => @guid
     }
   end
 

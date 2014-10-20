@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/customers?modifiedSince=2014-10-01T00:00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - zj9TcR81a32OoeqZUdoUJURz4kMuvYQ6jK3gfTyhkA8=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 13:20:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '10634'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a1; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Pagination":{"NumberOfItems":11,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"Addresses":[{"AddressType":"Postal","AddressName":"1234
+        fake street","StreetAddress":null,"Suburb":null,"City":"Bethesda","Region":"Maryland","Country":"United
+        States","PostalCode":"20818"}],"CustomerCode":"001","CustomerName":"wes ketchum","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":"wes@wes.com","EmailCC":"westest@test.com","Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"6739a193-a113-4128-897f-001ad1a7982a","LastModifiedOn":"\/Date(1413262816173)\/"},{"Addresses":[],"CustomerCode":"1234555","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"03772433-78ca-4627-a73d-6ec6247eb480","LastModifiedOn":"\/Date(1413350653013)\/"},{"Addresses":[],"CustomerCode":"123455666","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"11261569-ec0e-445b-b0ef-64c8bfd1dc1d","LastModifiedOn":"\/Date(1413350676157)\/"},{"Addresses":[],"CustomerCode":"12345566677","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"7210ce56-1c70-4cf0-9338-9267ad2052b1","LastModifiedOn":"\/Date(1413350813233)\/"},{"Addresses":[],"CustomerCode":"789","CustomerName":"John
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"e40e8690-72da-40d0-96de-3d1c00b9095b","LastModifiedOn":"\/Date(1413352436643)\/"},{"Addresses":[],"CustomerCode":"999","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"87a15ddc-3b35-49d0-a007-5a65ad2a5ca3","LastModifiedOn":"\/Date(1413351100720)\/"},{"Addresses":[],"CustomerCode":"spree@example.com","CustomerName":"Brian
+        Smith","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":null,"Guid":"0640463b-862f-41bc-a625-263938cc9b4a","LastModifiedOn":"\/Date(1413434448237)\/"},{"Addresses":[],"CustomerCode":"spree@unleashed.com","CustomerName":"Brian
+        Smith","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"b7cdb92f-0628-4c15-a206-fd930458817d","LastModifiedOn":"\/Date(1413434510190)\/"},{"Addresses":[],"CustomerCode":"test@t.com","CustomerName":"test
+        ","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c7b96023-f6ae-41d2-8398-b05707326e0d","LastModifiedOn":"\/Date(1413764028840)\/"},{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"},{"Addresses":[],"CustomerCode":"wesleyketchum@gmail.com","CustomerName":"wes","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
+        States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":0.0000,"PrintPackingSlipInsteadOfInvoice":false,"PrintInvoice":false,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"3a5d4253-0db8-4e73-b7f1-beb6d20a9eee","LastModifiedOn":"\/Date(1413422048513)\/"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 13:15:18 GMT
+recorded_with: VCR 2.9.3

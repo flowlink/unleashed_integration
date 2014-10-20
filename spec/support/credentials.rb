@@ -4,7 +4,7 @@ def sample_credentials
     YAML.load_file("credentials.yml")
   rescue Errno::ENOENT
     {
-      "app_id"  => 'app_id',
+      "api_id"  => 'app_id',
       "api_key" => 'api_key',
       "api_url" => 'api_url',
     }
