@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.unleashedsoftware.com/SalesOrders?orderNumber=711
+    uri: https://api.unleashedsoftware.com/SalesOrders?orderNumber=44112233
     body:
       encoding: US-ASCII
       string: ''
@@ -14,7 +14,7 @@ http_interactions:
       Api-Auth-Id:
       - API_ID
       Api-Auth-Signature:
-      - GbOEKTC0SQ4gIgUc9UWcuGVJ1K53UydnlH2p6JrrSaU=
+      - IbtioJwn+MwuZ24wIoewgAaYwmmz/jXKRm+JFNYj0vs=
   response:
     status:
       code: 200
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:48:59 GMT
+      - Mon, 20 Oct 2014 18:34:27 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -46,7 +46,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"Pagination":{"NumberOfItems":0,"PageSize":200,"PageNumber":0,"NumberOfPages":0},"Items":[]}'
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:43:44 GMT
+  recorded_at: Mon, 20 Oct 2014 18:29:13 GMT
 - request:
     method: get
     uri: https://api.unleashedsoftware.com/Customers?customerCode=test@test.com
@@ -70,7 +70,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:49:00 GMT
+      - Mon, 20 Oct 2014 18:34:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -88,26 +88,81 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Set-Cookie:
-      - SRV=a2; path=/
+      - SRV=a1; path=/
     body:
       encoding: UTF-8
       string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"Addresses":[],"CustomerCode":"test@test.com","CustomerName":"test","GSTVATNumber":null,"BankName":null,"BankBranch":null,"BankAccount":null,"Website":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"TollFreeNumber":null,"Email":null,"EmailCC":null,"Currency":{"CurrencyCode":"USD","Description":"United
         States of America, Dollars","Guid":"5a01c14a-ccf4-4f34-846b-eff6dd70da1c","LastModifiedOn":null},"Notes":null,"Taxable":true,"XeroContactId":null,"SalesPerson":null,"DiscountRate":null,"PrintPackingSlipInsteadOfInvoice":null,"PrintInvoice":null,"StopCredit":false,"Obsolete":false,"XeroSalesAccount":null,"XeroCostOfGoodsAccount":null,"SellPriceTier":"","SellPriceTierReference":null,"CustomerType":"","PaymentTerm":"","ContactFirstName":null,"ContactLastName":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","Guid":"c3d22457-b74a-4677-b719-d26988d1d3e5","LastModifiedOn":"\/Date(1413424319073)\/"}]}'
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:43:45 GMT
+  recorded_at: Mon, 20 Oct 2014 18:29:14 GMT
+- request:
+    method: get
+    uri: https://api.unleashedsoftware.com/Products?productCode=9160
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Auth-Id:
+      - API_ID
+      Api-Auth-Signature:
+      - vLQ74BSb1AULsTDyXmDsmXpSsOOQen3r7c21UhA9lCU=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 20 Oct 2014 18:34:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1520'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Allow:
+      - GET, POST
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - SRV=a2; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"ProductCode":"9160","ProductDescription":"something","Barcode":null,"PackSize":null,"Width":null,"Height":null,"Depth":null,"Weight":null,"MinStockAlertLevel":null,"MaxStockAlertLevel":null,"ReOrderPoint":null,"UnitOfMeasure":null,"NeverDiminishing":false,"LastCost":0.0000,"DefaultPurchasePrice":null,"DefaultSellPrice":null,"AverageLandPrice":0.0000,"Obsolete":false,"Notes":null,"SellPriceTier1":{"Name":"Sell
+        Price Tier 1","Value":null},"SellPriceTier2":{"Name":"Sell Price Tier 2","Value":null},"SellPriceTier3":{"Name":"Sell
+        Price Tier 3","Value":null},"SellPriceTier4":{"Name":"Sell Price Tier 4","Value":null},"SellPriceTier5":{"Name":"Sell
+        Price Tier 5","Value":null},"SellPriceTier6":{"Name":"Sell Price Tier 6","Value":null},"SellPriceTier7":{"Name":"Sell
+        Price Tier 7","Value":null},"SellPriceTier8":{"Name":"Sell Price Tier 8","Value":null},"SellPriceTier9":{"Name":"Sell
+        Price Tier 9","Value":null},"SellPriceTier10":{"Name":"Sell Price Tier 10","Value":null},"XeroTaxCode":null,"XeroTaxRate":null,"TaxablePurchase":null,"TaxableSales":null,"XeroSalesTaxCode":null,"XeroSalesTaxRate":null,"IsComponent":false,"IsAssembledProduct":false,"CanAutoAssemble":false,"ProductGroup":null,"XeroSalesAccount":null,"BinLocation":null,"Supplier":null,"SourceId":null,"CreatedBy":"wesleyketchum@gmail.com","SourceVariantParentId":null,"Guid":"eed6db73-81af-49f0-ae17-23d8c52ef0a4","LastModifiedOn":"\/Date(1413766150817)\/"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Oct 2014 18:29:14 GMT
 - request:
     method: post
-    uri: https://api.unleashedsoftware.com/SalesOrders/f96626e2-cde4-43dc-8f35-192b9b2c4ff0?customerCode=test@test.com
+    uri: https://api.unleashedsoftware.com/SalesOrders/f96626e2-cde4-43dc-8f37-192b9b2c4ff0?productCode=9160
     body:
       encoding: UTF-8
       string: |
         <?xml version="1.0"?>
         <SalesOrder xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://api.unleashedsoftware.com/version/1">
-          <Guid>f96626e2-cde4-43dc-8f35-192b9b2c4ff0</Guid>
-          <OrderNumber>711</OrderNumber>
-          <OrderStatus>Placed</OrderStatus>
+          <Guid>f96626e2-cde4-43dc-8f37-192b9b2c4ff0</Guid>
+          <OrderNumber>44112233</OrderNumber>
+          <OrderStatus>Completed</OrderStatus>
+          <Total>390</Total>
+          <SubTotal>380.0</SubTotal>
+          <TaxTotal>10.0</TaxTotal>
           <Tax>
-            <Guid>f96626e2-cde4-43dc-8f35-192b9b2c4ff0</Guid>
+            <Guid>f96626e2-cde4-43dc-8f37-192b9b2c4ff0</Guid>
             <TaxCode>None</TaxCode>
             <TaxRate>0.0</TaxRate>
           </Tax>
@@ -115,6 +170,19 @@ http_interactions:
             <Guid>c3d22457-b74a-4677-b719-d26988d1d3e5</Guid>
             <CustomerCode>test@test.com</CustomerCode>
           </Customer>
+          <SalesOrderLines>
+            <SalesOrderLine>
+              <LineNumber>1</LineNumber>
+              <Guid>f96626e2-cde4-43dc-8f37-192b9b2c4ff0</Guid>
+              <LineTotal>380</LineTotal>
+              <LineTax>10.0</LineTax>
+              <UnitPrice>190</UnitPrice>
+              <OrderQuantity>2</OrderQuantity>
+              <Product>
+                <Guid>eed6db73-81af-49f0-ae17-23d8c52ef0a4</Guid>
+              </Product>
+            </SalesOrderLine>
+          </SalesOrderLines>
         </SalesOrder>
     headers:
       Accept:
@@ -124,7 +192,7 @@ http_interactions:
       Api-Auth-Id:
       - API_ID
       Api-Auth-Signature:
-      - vWfUzrSFEWp/OK1TokpczpZmpw8LtYmZ+ShPJsKIK9U=
+      - vLQ74BSb1AULsTDyXmDsmXpSsOOQen3r7c21UhA9lCU=
   response:
     status:
       code: 201
@@ -133,11 +201,11 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:49:01 GMT
+      - Mon, 20 Oct 2014 18:34:32 GMT
       Content-Type:
       - application/xml; charset=utf-8
       Content-Length:
-      - '2095'
+      - '3105'
       Connection:
       - keep-alive
       Cache-Control:
@@ -156,9 +224,9 @@ http_interactions:
       encoding: UTF-8
       string: "<?xml version=\"1.0\"?>\r\n<SalesOrder xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://api.unleashedsoftware.com/version/1\">\r\n
-        \ <Guid>f96626e2-cde4-43dc-8f35-192b9b2c4ff0</Guid>\r\n  <LastModifiedOn>2014-10-20T13:43:41.47</LastModifiedOn>\r\n
-        \ <OrderNumber>711</OrderNumber>\r\n  <OrderDate>2014-10-20T13:43:41.44</OrderDate>\r\n
-        \ <RequiredDate xsi:nil=\"true\" />\r\n  <OrderStatus>Parked</OrderStatus>\r\n
+        \ <Guid>f96626e2-cde4-43dc-8f37-192b9b2c4ff0</Guid>\r\n  <LastModifiedOn>2014-10-20T18:29:12.3061737Z</LastModifiedOn>\r\n
+        \ <OrderNumber>44112233</OrderNumber>\r\n  <OrderDate>2014-10-20T18:29:10.6499237Z</OrderDate>\r\n
+        \ <RequiredDate xsi:nil=\"true\" />\r\n  <OrderStatus>Completed</OrderStatus>\r\n
         \ <Customer>\r\n    <Guid>c3d22457-b74a-4677-b719-d26988d1d3e5</Guid>\r\n
         \   <LastModifiedOn>2014-10-16T14:51:59.073</LastModifiedOn>\r\n    <CustomerCode>test@test.com</CustomerCode>\r\n
         \   <CustomerName>test</CustomerName>\r\n  </Customer>\r\n  <Warehouse>\r\n
@@ -173,12 +241,22 @@ http_interactions:
         xsi:nil=\"true\" />\r\n    <TaxCode>None</TaxCode>\r\n    <TaxRate>0.000000</TaxRate>\r\n
         \   <CanApplyToExpenses>false</CanApplyToExpenses>\r\n    <CanApplyToRevenue>false</CanApplyToRevenue>\r\n
         \ </Tax>\r\n  <TaxRate>0.000000</TaxRate>\r\n  <XeroTaxCode>None</XeroTaxCode>\r\n
-        \ <SubTotal>0.000</SubTotal>\r\n  <TaxTotal>0.000</TaxTotal>\r\n  <Total>0.000</Total>\r\n
-        \ <TotalVolume xsi:nil=\"true\" />\r\n  <TotalWeight xsi:nil=\"true\" />\r\n
-        \ <BCSubTotal xsi:nil=\"true\" />\r\n  <BCTaxTotal xsi:nil=\"true\" />\r\n
-        \ <BCTotal xsi:nil=\"true\" />\r\n  <PaymentDueDate>2014-10-20T13:43:41.47</PaymentDueDate>\r\n
+        \ <SubTotal>380.000</SubTotal>\r\n  <TaxTotal>0.000</TaxTotal>\r\n  <Total>380.000</Total>\r\n
+        \ <TotalVolume>0.000</TotalVolume>\r\n  <TotalWeight>0.000</TotalWeight>\r\n
+        \ <BCSubTotal>380.000</BCSubTotal>\r\n  <BCTaxTotal>0.000</BCTaxTotal>\r\n
+        \ <BCTotal>380.000</BCTotal>\r\n  <PaymentDueDate>2014-10-20T18:29:12.2905487Z</PaymentDueDate>\r\n
         \ <SendAccountingJournalOnly>false</SendAccountingJournalOnly>\r\n  <CreatedBy>api@unleashedsoftware.com</CreatedBy>\r\n
-        \ <SalesOrderLines />\r\n</SalesOrder>"
+        \ <SalesOrderLines>\r\n    <SalesOrderLine>\r\n      <Guid>f96626e2-cde4-43dc-8f37-192b9b2c4ff0</Guid>\r\n
+        \     <LastModifiedOn>2014-10-20T18:29:10.853</LastModifiedOn>\r\n      <LineNumber>1</LineNumber>\r\n
+        \     <Product>\r\n        <Guid>eed6db73-81af-49f0-ae17-23d8c52ef0a4</Guid>\r\n
+        \       <ProductCode>9160</ProductCode>\r\n        <ProductDescription>something</ProductDescription>\r\n
+        \     </Product>\r\n      <DueDate>2014-10-20T18:29:10.65</DueDate>\r\n      <OrderQuantity>2.0000</OrderQuantity>\r\n
+        \     <UnitPrice>190.0000</UnitPrice>\r\n      <DiscountRate>0.0000</DiscountRate>\r\n
+        \     <LineTotal>380.00000000</LineTotal>\r\n      <Volume xsi:nil=\"true\"
+        />\r\n      <Weight xsi:nil=\"true\" />\r\n      <UnitCost>0.00000000000000</UnitCost>\r\n
+        \     <TaxRate>0.000000</TaxRate>\r\n      <LineTax>0.000</LineTax>\r\n      <XeroTaxCode>None</XeroTaxCode>\r\n
+        \     <BCUnitPrice>190.0000</BCUnitPrice>\r\n      <BCLineTotal>380.000</BCLineTotal>\r\n
+        \     <BCLineTax>0.000</BCLineTax>\r\n    </SalesOrderLine>\r\n  </SalesOrderLines>\r\n</SalesOrder>"
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:43:46 GMT
+  recorded_at: Mon, 20 Oct 2014 18:29:17 GMT
 recorded_with: VCR 2.9.3

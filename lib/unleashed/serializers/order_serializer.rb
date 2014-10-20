@@ -33,7 +33,9 @@ module OrderSerializer
   end
 
   def serialize_for_post(order)
-    customer = find_or_create(order)
+    customer    = find_or_create(order)
+    tax_total   = order["totals"]["tax"].to_f
+    order_total = order["totals"]["order"]
 
     builder = Nokogiri::XML::Builder.new do |xml|
         xml.SalesOrder("xmlns:xsd" => "http://www.w3.org/2001/XMLSchema",
@@ -41,7 +43,10 @@ module OrderSerializer
                        "xmlns"     => "http://api.unleashedsoftware.com/version/1") {
           xml.Guid(@guid)
           xml.OrderNumber(order["id"])
-          xml.OrderStatus("Placed")
+          xml.OrderStatus("Completed")
+          xml.Total(order["totals"]["order"])
+          xml.SubTotal(order_total - tax_total)
+          xml.TaxTotal(order["totals"]["tax"].to_f)
           xml.Tax {
             xml.Guid(SecureRandom.uuid)
             xml.TaxCode("None")
@@ -51,26 +56,29 @@ module OrderSerializer
             xml.Guid(customer["Guid"])
             xml.CustomerCode(customer["CustomerCode"])
           }
+          xml.SalesOrderLines {
+            tax_per = tax_total / order['line_items'].size
+            order["line_items"].each_with_index do |item,index|
+              product = find_item(item["product_id"])
+
+              xml.SalesOrderLine {
+                xml.LineNumber(index + 1)
+                xml.Guid(SecureRandom.uuid)
+                xml.LineTotal(item["price"] * item['quantity'])
+                xml.LineTax(tax_per)
+                xml.UnitPrice(item['price'])
+                xml.OrderQuantity(item["quantity"])
+                xml.Product {
+                  xml.Guid(product["Guid"])
+                }
+              }
+            end
+          }
         }
       end
 
     builder.to_xml
   end
-
-    # {
-    #   "Guid" => @guid,
-    #   "OrderNumber" => order["id"],
-    #   "OrderStatus" => "Placed",
-    #   "Tax"=> {
-    #     "Guid" => SecureRandom.uuid,
-    #     "TaxCode" => "None",
-    #     "TaxRate" => 0.00
-    #   },
-    #   "Customer" => {
-    #     "Guid" => customer["Guid"],
-    #     "CustomerCode" => customer["CustomerCode"]
-    #   }
-    # }
 
   def find_or_create(order)
     email = order["email"]
@@ -97,5 +105,12 @@ module OrderSerializer
 
     @query_string = ''
     post_request("Customers/#{guid}", customer)
+  end
+
+  def find_item(id)
+    @query_string = "?productCode=#{id}"
+    products = request("Products")["Items"]
+    raise RecordNotFound, "Could not find product #{id} in your account" if products.empty?
+    products.first
   end
 end
