@@ -110,8 +110,8 @@ describe UnleashedIntegration do
   describe "/set_inventory" do
     it "creates a customer" do
       VCR.use_cassette("create_inventory") do
-        expect(SecureRandom).to receive(:uuid).twice.and_return('f96626e2-cde4-43dc-8f35-192b9b2c4ff0')
-        inventory = { inventory: { "id" => '9160', "location" => "Warehouse", "reason" => "Adjustment", "quantity" => 1 }}
+        expect(SecureRandom).to receive(:uuid).twice.and_return('f96626e2-cde4-43dc-8f35-192b9b2c4ff9')
+        inventory = { inventory: { "id" => '9160', "location" => "Warehouse", "reason" => "Adjustment", "quantity" => 1, "product_id" => "SPREE-T-SHIRT641053" }}
         post '/set_inventory', request.merge(inventory).to_json, {}
 
         expect(json_response['inventories'].size).to eq 1

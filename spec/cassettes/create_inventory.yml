@@ -14,7 +14,7 @@ http_interactions:
       Api-Auth-Id:
       - API_ID
       Api-Auth-Signature:
-      - AX5BPejDCorpbac37ZkdvGpASI32ji3FnAdgt8SWwqs=
+      - toPXu6AJU5+SHrvZOXAktzS0wosHdwib1UeZ9Atpj6k=
   response:
     status:
       code: 200
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:35:43 GMT
+      - Tue, 21 Oct 2014 15:02:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -41,15 +41,15 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Set-Cookie:
-      - SRV=a2; path=/
+      - SRV=a1; path=/
     body:
       encoding: UTF-8
-      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null}]}'
+      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"da6c7232-23be-4aaf-88bb-8202deffdffb","LastModifiedOn":null}]}'
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:30:29 GMT
+  recorded_at: Tue, 21 Oct 2014 14:57:43 GMT
 - request:
     method: get
-    uri: https://api.unleashedsoftware.com/Products?productCode=9160
+    uri: https://api.unleashedsoftware.com/Products?productCode=SPREE-T-SHIRT641053
     body:
       encoding: US-ASCII
       string: ''
@@ -61,7 +61,7 @@ http_interactions:
       Api-Auth-Id:
       - API_ID
       Api-Auth-Signature:
-      - vLQ74BSb1AULsTDyXmDsmXpSsOOQen3r7c21UhA9lCU=
+      - ohWd8/zkEdd1QRCMfZ7FF0cE2DJVJA6+WWhkBrPBCIY=
   response:
     status:
       code: 200
@@ -70,11 +70,11 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:35:44 GMT
+      - Tue, 21 Oct 2014 15:02:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1499'
+      - '1555'
       Connection:
       - keep-alive
       Cache-Control:
@@ -88,23 +88,25 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Set-Cookie:
-      - SRV=a2; path=/
+      - SRV=a1; path=/
     body:
       encoding: UTF-8
-      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"ProductCode":"9160","ProductDescription":"something","Barcode":null,"PackSize":null,"Width":null,"Height":null,"Depth":null,"Weight":null,"MinStockAlertLevel":null,"MaxStockAlertLevel":null,"ReOrderPoint":null,"UnitOfMeasure":null,"NeverDiminishing":false,"LastCost":0.0000,"DefaultPurchasePrice":null,"DefaultSellPrice":null,"AverageLandPrice":0.0000,"Obsolete":false,"Notes":null,"SellPriceTier1":{"Name":"Sell
+      string: '{"Pagination":{"NumberOfItems":1,"PageSize":200,"PageNumber":1,"NumberOfPages":1},"Items":[{"ProductCode":"SPREE-T-SHIRT641053","ProductDescription":"Awesome
+        Spree T-Shirt","Barcode":null,"PackSize":null,"Width":null,"Height":null,"Depth":null,"Weight":null,"MinStockAlertLevel":null,"MaxStockAlertLevel":null,"ReOrderPoint":null,"UnitOfMeasure":null,"NeverDiminishing":false,"LastCost":0.0000,"DefaultPurchasePrice":0.0000,"DefaultSellPrice":1.0000,"AverageLandPrice":0.0000,"Obsolete":false,"Notes":null,"SellPriceTier1":{"Name":"Sell
         Price Tier 1","Value":null},"SellPriceTier2":{"Name":"Sell Price Tier 2","Value":null},"SellPriceTier3":{"Name":"Sell
         Price Tier 3","Value":null},"SellPriceTier4":{"Name":"Sell Price Tier 4","Value":null},"SellPriceTier5":{"Name":"Sell
         Price Tier 5","Value":null},"SellPriceTier6":{"Name":"Sell Price Tier 6","Value":null},"SellPriceTier7":{"Name":"Sell
         Price Tier 7","Value":null},"SellPriceTier8":{"Name":"Sell Price Tier 8","Value":null},"SellPriceTier9":{"Name":"Sell
-        Price Tier 9","Value":null},"SellPriceTier10":{"Name":"Sell Price Tier 10","Value":null},"XeroTaxCode":null,"XeroTaxRate":null,"TaxablePurchase":null,"TaxableSales":null,"XeroSalesTaxCode":null,"XeroSalesTaxRate":null,"IsComponent":false,"IsAssembledProduct":false,"CanAutoAssemble":false,"ProductGroup":null,"XeroSalesAccount":null,"BinLocation":null,"Supplier":null,"SourceId":null,"CreatedBy":null,"SourceVariantParentId":null,"Guid":"eed6db73-81af-49f0-ae17-23d8c52ef0a4","LastModifiedOn":"\/Date(1413269988733)\/"}]}'
+        Price Tier 9","Value":null},"SellPriceTier10":{"Name":"Sell Price Tier 10","Value":null},"XeroTaxCode":null,"XeroTaxRate":null,"TaxablePurchase":true,"TaxableSales":true,"XeroSalesTaxCode":null,"XeroSalesTaxRate":null,"IsComponent":false,"IsAssembledProduct":false,"CanAutoAssemble":false,"ProductGroup":null,"XeroSalesAccount":null,"BinLocation":null,"Supplier":null,"SourceId":null,"CreatedBy":"sameer+10@spreecommerce.com","SourceVariantParentId":null,"Guid":"f140baca-f856-42b4-bb3d-bff7314b2616","LastModifiedOn":"\/Date(1413851144347)\/"}]}'
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:30:29 GMT
+  recorded_at: Tue, 21 Oct 2014 14:57:44 GMT
 - request:
     method: post
-    uri: https://api.unleashedsoftware.com/StockAdjustments/f96626e2-cde4-43dc-8f35-192b9b2c4ff0?productCode=9160
+    uri: https://api.unleashedsoftware.com/StockAdjustments/f96626e2-cde4-43dc-8f35-192b9b2c4ff9?productCode=SPREE-T-SHIRT641053
     body:
       encoding: UTF-8
-      string: '{"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff0","Warehouse":{"WarehouseName":"Warehouse","WarehouseCode":"W1"},"AdjustmentReason":"Adjustment","StockAdjustmentLines":[{"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff0","NewQuantity":1,"NewActualValue":0.0,"Product":{"ProductCode":"9160","ProductDescription":"something","Guid":"eed6db73-81af-49f0-ae17-23d8c52ef0a4"}}]}'
+      string: '{"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff9","Warehouse":{"WarehouseName":"Warehouse","WarehouseCode":"W1"},"AdjustmentReason":"Adjustment","StockAdjustmentLines":[{"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff9","NewQuantity":1,"NewActualValue":0.0,"Product":{"ProductCode":"SPREE-T-SHIRT641053","ProductDescription":"Awesome
+        Spree T-Shirt","Guid":"f140baca-f856-42b4-bb3d-bff7314b2616"}}]}'
     headers:
       Accept:
       - application/json
@@ -113,7 +115,7 @@ http_interactions:
       Api-Auth-Id:
       - API_ID
       Api-Auth-Signature:
-      - vLQ74BSb1AULsTDyXmDsmXpSsOOQen3r7c21UhA9lCU=
+      - ohWd8/zkEdd1QRCMfZ7FF0cE2DJVJA6+WWhkBrPBCIY=
   response:
     status:
       code: 201
@@ -122,11 +124,11 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Mon, 20 Oct 2014 13:35:45 GMT
+      - Tue, 21 Oct 2014 15:02:59 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '908'
+      - '935'
       Connection:
       - keep-alive
       Cache-Control:
@@ -143,7 +145,8 @@ http_interactions:
       - SRV=a2; path=/
     body:
       encoding: UTF-8
-      string: '{"AdjustmentNumber":"SA-00000020","Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"afc4e712-538b-45b4-a07a-d5185e909b62","LastModifiedOn":null},"AdjustmentDate":"\/Date(1413765025470)\/","AdjustmentReason":"Adjustment","Status":"Parked","StockAdjustmentLines":[{"LineNumber":1,"Product":{"Guid":"eed6db73-81af-49f0-ae17-23d8c52ef0a4","ProductCode":"9160","ProductDescription":"something"},"NewQuantity":1.0000,"NewActualValue":0.000,"Comments":null,"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff0","LastModifiedOn":"\/Date(1413765025483)\/"}],"ConfirmedOn":null,"ConfirmedBy":null,"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff0","LastModifiedOn":"\/Date(1413765025470)\/"}'
+      string: '{"AdjustmentNumber":"SA-00000005","Warehouse":{"WarehouseCode":"W1","WarehouseName":"Warehouse","IsDefault":true,"StreetNo":null,"AddressLine1":null,"AddressLine2":null,"City":null,"Region":null,"Country":null,"PostCode":null,"PhoneNumber":null,"FaxNumber":null,"MobileNumber":null,"DDINumber":null,"ContactName":"","Guid":"da6c7232-23be-4aaf-88bb-8202deffdffb","LastModifiedOn":null},"AdjustmentDate":"\/Date(1413856659813)\/","AdjustmentReason":"Adjustment","Status":"Parked","StockAdjustmentLines":[{"LineNumber":1,"Product":{"Guid":"f140baca-f856-42b4-bb3d-bff7314b2616","ProductCode":"SPREE-T-SHIRT641053","ProductDescription":"Awesome
+        Spree T-Shirt"},"NewQuantity":1.0000,"NewActualValue":0.000,"Comments":null,"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff9","LastModifiedOn":"\/Date(1413856659813)\/"}],"ConfirmedOn":null,"ConfirmedBy":null,"Guid":"f96626e2-cde4-43dc-8f35-192b9b2c4ff9","LastModifiedOn":"\/Date(1413856659813)\/"}'
     http_version: 
-  recorded_at: Mon, 20 Oct 2014 13:30:30 GMT
+  recorded_at: Tue, 21 Oct 2014 14:57:45 GMT
 recorded_with: VCR 2.9.3

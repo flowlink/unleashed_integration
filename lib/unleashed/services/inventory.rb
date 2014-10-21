@@ -32,7 +32,7 @@ module Services
 
     def serialize_for_post(inventory)
       warehouse = find_warehouse(inventory["location"])
-      product   = find_product(inventory['id'])
+      product   = find_product(inventory['product_id'])
 
       {
         "Guid" => @guid,
@@ -41,7 +41,6 @@ module Services
           "WarehouseCode" => warehouse["WarehouseCode"]
           },
         "AdjustmentReason"  => inventory["reason"],
-        "Guid" => @guid,
         "StockAdjustmentLines" => [{
           "Guid" => SecureRandom.uuid,
           "NewQuantity" => inventory["quantity"],
