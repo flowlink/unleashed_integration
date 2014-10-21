@@ -3,6 +3,7 @@ module ProductSerializer
     {
       "ProductCode"        => product["id"].to_s,
       "ProductDescription" => product["description"],
+      "DefaultSellPrice"   => product['price'],
       "Guid"               => @guid
     }
   end
