@@ -99,8 +99,13 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
 
         add_object :product, product
 
-        code    = 200
-        message = "Created Product in Unleashed"
+        code = 200
+
+        if path == '/add_product'
+          message = "Created Product #{@payload['product']['id']} in Unleashed"
+        else
+          message = "Updated Product #{@payload['product']['id']} in Unleashed"
+        end
       rescue ApiError, RecordNotFound => e
         code    = 500
         message = e.message
@@ -119,7 +124,13 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
         add_object :customer, customer
 
         code    = 200
-        message = "Created Customer in Unleashed"
+
+        if path == '/add_customer'
+          message = "Created Customer #{@payload['customer']['id']} in Unleashed"
+        else
+          message = "Updated Customer #{@payload['customer']['id']} in Unleashed"
+        end
+
       rescue ApiError, RecordNotFound => e
         code    = 500
         message = e.message
@@ -154,7 +165,7 @@ class UnleashedIntegration < EndpointBase::Sinatra::Base
       add_object :order, order
 
       code    = 200
-      message = "Added Order in Unleashed"
+      message = "Created Order #{order['id']} in Unleashed"
     rescue ApiError, RecordNotFound => e
       code = 500
       message = e.message
