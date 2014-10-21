@@ -61,6 +61,11 @@ module OrderSerializer
             xml.Guid(customer["Guid"])
             xml.CustomerCode(customer["CustomerCode"])
           }
+          xml.DeliveryStreetAddress(order['shipping_address']['address1'])
+          xml.DeliveryCity(order['shipping_address']['city'])
+          xml.DeliveryPostCode(order['shipping_address']['zipcode'])
+          xml.DeliveryRegion(order['shipping_address']['state'])
+          xml.DeliveryCountry(order['shipping_address']['country'])
           xml.SalesOrderLines {
             tax_per = tax_total / order['line_items'].size
             order["line_items"].each_with_index do |item,index|

@@ -24,6 +24,17 @@
                      "tax"    => 10,
                      "items"  => 380
                      },
+                     "shipping_address" => {
+                        "firstname" => "Joe",
+                        "lastname" => "Smith",
+                        "address1" => "1234 Awesome Street",
+                        "address2" => "",
+                        "zipcode" => "90210",
+                        "city" => "Hollywood",
+                        "state" => "California",
+                        "country" => "US",
+                        "phone" => "0000000000"
+                    },
                     "line_items" => [
                       {
                         "product_id" => "9160",
