@@ -19,7 +19,7 @@ module Services
 
           client = described_class.new(sample_credentials)
           expect(SecureRandom).to receive(:uuid).twice.and_return('f96626e2-cde4-43dc-8f35-192b9b2c4ff9')
-          inventory = client.create({ "id" => '9160', "location" => "Warehouse", "reason" => "Adjustment", "quantity" => 1, "product_id" => "SPREE-T-SHIRT641053" })
+          inventory = client.create({ "id" => '9160', "location" => "Warehouse", "quantity" => 1, "product_id" => "SPREE-T-SHIRT641053" })
 
           expect(inventory[:id]).to eq "9160"
         end

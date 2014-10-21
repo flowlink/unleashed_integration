@@ -40,7 +40,7 @@ module Services
           "WarehouseName" => warehouse["WarehouseName"],
           "WarehouseCode" => warehouse["WarehouseCode"]
           },
-        "AdjustmentReason"  => inventory["reason"],
+        "AdjustmentReason"  => inventory["reason"] || 'Adjustment',
         "StockAdjustmentLines" => [{
           "Guid" => SecureRandom.uuid,
           "NewQuantity" => inventory["quantity"],
