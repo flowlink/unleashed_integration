@@ -20,6 +20,11 @@ module OrderSerializer
         order: order['Total'],
         tax:   order['TaxTotal']
       },
+      adjustments: [
+       {
+        "name"  => "Tax",
+        "value" => order["TaxTotal"]
+       }],
       line_items:   order['SalesOrderLines'].map do |item|
         {
           product_id:   item['Product']['ProductCode'],
